@@ -1,0 +1,367 @@
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,a,address,em,img,ol,ul,li,fieldset,form,label,legend,table,tbody,tfoot,thead,tr,th,td,i,b,s{margin:0;padding:0;border:0;font-family:Helvetica,Arial}
+ul,ol{list-style:none}
+body,html{background-color: #fdeb01;overflow: hidden;width: 100%;height: 100%;}
+.loading{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.loading-wrap{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -50px;
+}
+.loading-pic{
+	width: 80px;
+	height: 80px;
+	background: url(../img/loading-9d181ccd8a.png) no-repeat 0 0 /cover;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.loading-text{
+	text-align: center;
+}
+/*<div class="home">
+		<div class="title"></div>
+		<div class="subtitle"></div>
+		<div class="entitle"></div>
+		<div class="hand-wrap">
+			
+		</div>
+	</div>*/
+.home{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.home .title{
+	width: 82.81vw;
+	height: 18.05vw;
+	position: absolute;
+	left: 9.38vw;
+	top: 6.25vw;
+	background: url(../img/title-e0d770f53f.png) no-repeat 0 0 /cover;
+	display: none;
+}
+.home .subtitle{
+	width: 71.88vw;
+	height: 15.94vw;
+	position: absolute;
+	left: 15.59vw;
+	top: 25.5vw;
+	background: url(../img/subtitle-32eab7da70.png) no-repeat 0 0 /cover;
+	display: none;
+}
+.home .entitle{
+	width: 82.97vw;
+	height: 7.03vw;
+	position: absolute;
+	left: 7.97vw;
+	top: 49.5vw;
+	background: url(../img/entitle-06dd480f41.png) no-repeat 0 0 /cover;
+	display: none;
+}
+.home .hand-wrap{
+	width: 95.47vw;
+	height: 117.03vw;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	display: none;
+	background: url(../img/hand-2c59a2eaab.png) no-repeat 0 0 /cover;
+	animation:shake-wrap 2s linear both infinite ;
+	transform-origin: 40% 90%;
+}
+@keyframes shake-wrap{
+	0%{transform:rotate(0deg)}
+	10%{transform:rotate(5deg)}
+	20%{transform:rotate(-5deg)}
+	30%{transform:rotate(5deg)}
+	40%{transform:rotate(-5deg)}
+	100%{transform:rotate(0deg)}
+}
+.shake-wrap .screen0{
+		background: url(../img/homedage-8640984a36.png) no-repeat 0 0 /cover;
+		width:51.88vw;
+		height: 47.97vw;
+		position: absolute;
+		left:26vw;
+		top:13.13vw;	
+}
+.shake-wrap .screen1{
+		background: url(../img/homenanchun-d92f5c899a.png) no-repeat 0 0 /cover;
+		width:51.88vw;
+		height: 47.97vw;
+		position: absolute;
+		left:26vw;
+		top:13.13vw;	
+}
+.shake-wrap .screen2{
+		background: url(../img/homenanmu-98d7b70b57.png) no-repeat 0 0 /cover;
+		width:51.88vw;
+		height: 47.97vw;
+		position: absolute;
+		left:26vw;
+		top:13.13vw;	
+}
+.shake-wrap .screen3{
+		background: url(../img/homenanxi-32797f7073.png) no-repeat 0 0 /cover;
+		width:51.88vw;
+		height: 47.97vw;
+		position: absolute;
+		left:26vw;
+		top:13.13vw;	
+}
+.shake-wrap .screen4{
+		background: url(../img/homenanxiao-260c9435b2.png) no-repeat 0 0 /cover;
+		width:51.88vw;
+		height: 47.97vw;
+		position: absolute;
+		left:26vw;
+		top:13.13vw;	
+}
+.shake-wrap .screen5{
+		background: url(../img/homenanxin-a918e7537c.png) no-repeat 0 0 /cover;
+		width:51.88vw;
+		height: 47.97vw;
+		position: absolute;
+		left:26vw;
+		top:13.13vw;	
+}
+.shake-wrap .screen6{
+		background: url(../img/hometanzhang-183696167c.png) no-repeat 0 0 /cover;
+		width:51.88vw;
+		height: 47.97vw;
+		position: absolute;
+		left:26vw;
+		top:13.13vw;	
+}
+.finger{
+	background: url(../img/hand_finger-5697478078.png) no-repeat 0 0 /cover;
+	width:42.8vw;
+	height: 34.38vw;
+	position: absolute;
+	left:28.27vw;
+	top:17.13vw;
+}
+.result{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+}
+.result .item{display: none;}
+.result .title{
+		/*background: url(../img/entitle-06dd480f41.png) no-repeat 0 0 /cover;*/
+		font-size: 7.5vw;
+		font-weight: bold;
+		width:96.88vw;
+		height: 7.34vw;
+		position: absolute;
+		left:2.03vw;
+		top:0.5vw;
+	}
+.result .answer{
+		width:82.03vw;
+		height: 13.28vw;
+		position: absolute;
+		left:8vw;
+		top:22.5vw;
+		display: none;	
+	}
+.result .answer1{
+		background: url(../img/result-baba-0683148ce0.png) no-repeat 0 0 /cover;
+	}
+.result .answer2{
+		background: url(../img/result-daage-bedd5551a1.png) no-repeat 0 0 /cover;
+	}
+.result .answer3{
+		background: url(../img/result-dahantianzi-5622d97190.png) no-repeat 0 0 /cover;
+	}
+.result .answer4{
+		background: url(../img/result-dama-721e5d7ec2.png) no-repeat 0 0 /cover;
+	}
+.result .answer5{
+		background: url(../img/result-erma-2f0bdca876.png) no-repeat 0 0 /cover;
+	}
+.result .answer6{
+		background: url(../img/result-gaochun-1de64df77f.png) no-repeat 0 0 /cover;
+	}
+.result .answer7{
+		background: url(../img/result-nanchun-4a5111f3f9.png) no-repeat 0 0 /cover;
+	}
+.result .answer8{
+		background: url(../img/result-nanen-4f711226bd.png) no-repeat 0 0 /cover;
+	}
+.result .answer9{
+		background: url(../img/result-nanmu-d01082d514.png) no-repeat 0 0 /cover;
+	}
+.result .answer10{
+		background: url(../img/result-nanxi-e9ead2be30.png) no-repeat 0 0 /cover;
+	}
+.result .answer11{
+		background: url(../img/result-nanxiao-6a22f21e79.png) no-repeat 0 0 /cover;
+	}
+.result .answer12{
+		background: url(../img/result-nanxin-c06e614384.png) no-repeat 0 0 /cover;
+	}
+.result .answer13{
+		background: url(../img/result-tanzhang-5bd44933fb.png) no-repeat 0 0 /cover;
+	}
+.result .answer14{
+		background: url(../img/result-xiaoshen-97a40416d0.png) no-repeat 0 0 /cover;
+	}
+.result .answer15{
+		background: url(../img/result-xiaoshuo-e28bfbf471.png) no-repeat 0 0 /cover;
+	}
+.result .avatar-wrap{
+		background: url(../img/result_avatar_bg_1-847ddaa2c3.png) no-repeat 0 0 /cover;
+		width:51.56vw;
+		height: 94.06vw;
+		position: absolute;
+		left:24.38vw;
+		top:0px;														
+	}
+.result .avatar-wrap .wenha{
+			background: url(../img/result_avatar_bg_2-90e90a78e9.png) no-repeat 0 0 /cover;
+			width:46.88vw;
+			height: 46.88vw;
+			position: absolute;
+			left:2.34vw;
+			top:45vw;
+		}
+.result .avatar-wrap .avatar{
+			width:46.88vw;
+			height: 46.88vw;
+			position: absolute;
+			left:2.34vw;
+			top:45vw;
+			display: none;
+		}
+.result .avatar-wrap .avatar1{
+			background: url(../img/baba-7300de3975.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar2{
+			background: url(../img/dage-6cb10773ec.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar3{
+			background: url(../img/dahantianzi-be8abb34e7.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar4{
+			background: url(../img/dama-85790dc035.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar5{
+			background: url(../img/erma-4d66a2c8e8.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar6{
+			background: url(../img/gaochun-045c8c475e.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar7{
+			background: url(../img/nanchun-593bfe472d.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar8{
+			background: url(../img/nanen-727fb09d4c.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar9{
+			background: url(../img/nanmu-01968a272c.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar10{
+			background: url(../img/nanxi-d7f0a73c0c.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar11{
+			background: url(../img/nanxiao-4a91e0c07f.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar12{
+			background: url(../img/nanxin-3a42d9b4e8.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar13{
+			background: url(../img/tanzhang-22ee87e6d0.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar14{
+			background: url(../img/laopo-26b7a04334.png) no-repeat 0 0 /cover;
+		}
+.result .avatar-wrap .avatar15{
+			background: url(../img/xiaoshuo-2262db15f4.png) no-repeat 0 0 /cover;
+		}
+.result .btns{
+		background: url(../img/result_btn-8ad12b43c0.png) no-repeat 0 0 /cover;
+		width:65.47vw;
+		height: 17.03vw;
+		position: absolute;
+		left:16.56vw;
+		top:122.5vw;
+	}
+.backgd{
+	background: rgba(0,0,0,0.6);
+	width: 100vw;
+	height: 218.75vw;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+.share{
+		background: url(../img/share-f36a9de4a3.png) no-repeat 0 0 /cover;
+		width:39.22vw;
+		height: 34.38vw;
+		position: absolute;
+		left:60vw;
+		top:4vw;	
+		z-index: 2;
+		display: none;
+}
+/*	animation:shake-wrap 2s linear both infinite ;
+	transform-origin: 40% 90%;
+}
+@keyframes shake-wrap{
+	0%{transform:rotate(0deg)}
+	10%{transform:rotate(5deg)}
+	20%{transform:rotate(-5deg)}
+	30%{transform:rotate(5deg)}
+	40%{transform:rotate(-5deg)}
+	100%{transform:rotate(0deg)}
+}*/
+.hands{
+	background: url(../img/shake_tips-8a9b58ae51.png) no-repeat 0 0 /cover;
+	width:18.28vw;
+	height: 21.88vw;
+	position: absolute;
+	left:41.09vw;
+	top:96.25vw;
+	animation:shakehand 2s linear both infinite ;
+	transform-origin: 40% 90%;
+}
+@keyframes shakehand{
+    0%{-webkit-transform:rotate(0);transform:rotate(0);}
+    10%{-webkit-transform:rotate(-20deg);transform:rotate(-20deg);}
+    20%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+    30%{-webkit-transform:rotate(-20deg);transform:rotate(-20deg);}
+    40%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(-20deg);transform:rotate(-20deg);}
+}
+@-webkit-keyframes screen{0%{opacity:0}
+    2%{opacity:1}
+    16.7%{opacity:1}
+    16.8%{opacity:0}
+    100%{opacity:0}}
+@keyframes screen{0%{opacity:0}
+    2%{opacity:1}
+    16.7%{opacity:1}
+    16.8%{opacity:0}
+    100%{opacity:0}}
+.screen0{-webkit-animation:screen 1200ms 0 linear both infinite;animation:screen 1200ms 0 linear both infinite}
+.screen1{-webkit-animation:screen 1200ms 200ms linear both infinite;animation:screen 1200ms 200ms linear both infinite}
+.screen2{-webkit-animation:screen 1200ms 400ms linear both infinite;animation:screen 1200ms 400ms linear both infinite}
+.screen3{-webkit-animation:screen 1200ms 600ms linear both infinite;animation:screen 1200ms 600ms linear both infinite}
+.screen4{-webkit-animation:screen 1200ms 800ms linear both infinite;animation:screen 1200ms 800ms linear both infinite}
+.screen5{-webkit-animation:screen 1200ms 1000ms linear both infinite;animation:screen 1200ms 1000ms linear both infinite}
+.screen6{-webkit-animation:screen 1200ms 1200ms linear both infinite;animation:screen 1200ms 1200ms linear both infinite}

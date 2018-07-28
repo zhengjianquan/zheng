@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="./public/css/style2-f26757ac12.css">
+
+    <script src="./public/js/jquery-b98661369a.js"></script>  <!-- jquery,操作页面上html元素 -->
+    <script src="./public/js/velocity-db5c753c2b.js"></script> <!-- 动画库 -->
+    <script src="./public/js/velocity-f55d22cc59.ui.js"></script><!-- 动画库 -->
+    <script src="./public/js/shake-9ce2066986.js"></script><!-- 摇一摇组件 -->
+    <!-- <link rel="icon" href=""> -->
+<head>
+	<title>光棍节跟谁过</title>
+</head>
+<body>
+		<div class="loading">
+		<div class="loading-wrap">
+			<canvas id="mycanvas" width="100" height="100"></canvas>
+			<div class="loading-pic"></div>
+			<div class="loading-text">100%</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="title"></div>
+		<div class="subtitle"></div>
+		<div class="entitle"></div>
+		<div class="hand-wrap">
+			<div class="shake-wrap">
+				<div class="screen screen0"></div>
+				<div class="screen screen1"></div>
+				<div class="screen screen2"></div>
+				<div class="screen screen3"></div>
+				<div class="screen screen4"></div>
+				<div class="screen screen5"></div>
+				<div class="screen screen6"></div>
+			</div>
+			<div class="finger"></div>
+		</div>
+	</div>
+	<div class="result">
+		<div class="item" data-index='0'>
+			<div class="title"></div>
+			<div class="answer answer1"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar1"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='1'>
+			<div class="title"></div>
+			<div class="answer answer2"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar2"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='2'>
+			<div class="title"></div>
+			<div class="answer answer3"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar3"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='3'>
+			<div class="title"></div>
+			<div class="answer answer4"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar4"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='4'>
+			<div class="title"></div>
+			<div class="answer answer5"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar5"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='5'>
+			<div class="title"></div>
+			<div class="answer answer6"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar6"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='6'>
+			<div class="title"></div>
+			<div class="answer answer7"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar7"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='7'>
+			<div class="title"></div>
+			<div class="answer answer8"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar8"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='8'>
+			<div class="title"></div>
+			<div class="answer answer9"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar9"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='9'>
+			<div class="title"></div>
+			<div class="answer answer10"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar10"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='10'>
+			<div class="title"></div>
+			<div class="answer answer11"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar11"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='11'>
+			<div class="title"></div>
+			<div class="answer answer12"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar12"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='12'>
+			<div class="title"></div>
+			<div class="answer answer13"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar13"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='13'>
+			<div class="title"></div>
+			<div class="answer answer14"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar14"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>
+		<div class="item" data-index='14'>
+			<div class="title"></div>
+			<div class="answer answer15"></div>  
+			<div class="avatar-wrap">
+				<div class="wenha"></div>
+				<div class="avatar avatar15"></div>
+			</div> 
+			<div class="hands"></div>
+			<div class="btns"></div>
+		</div>																					
+	</div>
+	<div class="backgd"></div>
+	<div class="share"></div>
+<script type="text/javascript">
+		var canvas = document.getElementById('mycanvas');
+		var context = canvas.getContext('2d') //返回一个用于在画布上绘图的环境
+		context.beginPath()//起始一条路径，或重置当前路径
+		context.moveTo(50,50);//把路径移动到画布中的指定点，不创建线条
+		context.arc(50,50,50,0,2*Math.PI,false);
+		context.closePath()//创建从当前点回到起始点的路径
+		context.fillStyle='#fff'//属性设置或返回用于填充绘画的颜色、渐变或模式。
+		context.fill()//填充当前的路径
+	function drawCircle(percent) {
+
+
+		console.log(percent)
+		context.beginPath()//起始一条路径，或重置当前路径
+		context.moveTo(50,50);//把路径移动到画布中的指定点，不创建线条
+		// context.arc(50,50,50,0+1.5*Math.PI,1.5*Math.PI+(2*Math.PI)*percent/100,false);
+		context.arc(50,50,50,1.5*Math.PI,1.5*Math.PI+(-(2*Math.PI)*percent/100),true);
+		// context.arc(50,50,50,0,-(2*Math.PI)*percent/100,true);
+		// context.arc(50,50,50,0,(2*Math.PI)*(1-percent/100)||2*Math.PI,true);
+			// context.arc(50,50,50,0,0.5*Math.PI,true);
+			// context.arc(50,50,50,0,0.5*Math.PI,false);
+		context.closePath()//创建从当前点回到起始点的路径
+		context.fillStyle='#ffa9ad'//属性设置或返回用于填充绘画的颜色、渐变或模式。
+		context.fill()//填充当前的路径
+		$('.loading-text').text(percent+'%')
+	}
+	// drawCircle()
+
+	// 加载一张图片缓存
+	// var img = new Image();
+	// 	img.src = pics[index];
+	// 	img.onload = function(){
+	// 		console.log(index);
+	// 		index++
+	// 	}
+	// 加载多张图片
+	var pics = ["./public/img/baba-7300de3975.png","./public/img/dage-6cb10773ec.png","./public/img/dahantianzi-be8abb34e7.png","./public/img/dama-85790dc035.png","./public/img/entitle-06dd480f41.png","./public/img/erma-4d66a2c8e8.png","./public/img/gaochun-045c8c475e.png","./public/img/hand-2c59a2eaab.png","./public/img/hand_finger-5697478078.png","./public/img/home_shake_text-aa64951385.png","./public/img/homedage-8640984a36.png","./public/img/homenanchun-d92f5c899a.png","./public/img/homenanxi-32797f7073.png","./public/img/homenanxiao-260c9435b2.png","./public/img/homenanxin-a918e7537c.png","./public/img/hometanzhang-183696167c.png","./public/img/laopo-26b7a04334.png","./public/img/loading-9d181ccd8a.png","./public/img/nanchun-593bfe472d.png","./public/img/nanen-727fb09d4c.png","./public/img/nanmu-01968a272c.png","./public/img/nanxi-d7f0a73c0c.png","./public/img/nanxiao-4a91e0c07f.png","./public/img/nanxin-3a42d9b4e8.png","./public/img/result_avatar_bg-d0892caaf2.png","./public/img/result_avatar_bg_1-847ddaa2c3.png","./public/img/result_avatar_bg_2-90e90a78e9.png","./public/img/result_btn-8ad12b43c0.png","./public/img/result-baba-0683148ce0.png","./public/img/result-daage-bedd5551a1.png","./public/img/result-dahantianzi-5622d97190.png","./public/img/result-dama-721e5d7ec2.png","./public/img/result-erma-2f0bdca876.png","./public/img/result-gaochun-1de64df77f.png","./public/img/result-nanchun-4a5111f3f9.png","./public/img/result-nanen-4f711226bd.png","./public/img/result-nanmu-d01082d514.png","./public/img/result-nanxi-e9ead2be30.png","./public/img/result-nanxiao-6a22f21e79.png","./public/img/result-nanxin-c06e614384.png","./public/img/result-tanzhang-5bd44933fb.png","./public/img/result-xiaoshen-97a40416d0.png","./public/img/result-xiaoshuo-e28bfbf471.png","./public/img/shake_tips-8a9b58ae51.png","./public/img/share-f36a9de4a3.png","./public/img/subtitle-32eab7da70.png","./public/img/tanzhang-22ee87e6d0.png","./public/img/title-e0d770f53f.png","./public/img/xiaoshuo-2262db15f4.png"]
+
+	var question = ["见过探长哥哥老婆的人是:","总是喜欢照镜子觉得自己特别帅的人是:","赶不上地铁也会特别紧张的人是:","接下来冒出来的人 肯定是个大蠢蛋","最适合去找藏双姑姑的人是:","探长哥哥说自己小毛驴被人刮了谁最生气","照镜子竟然会不小心流口水的人是:","楠新抢红包总是手气最佳 那么最气苦的人是:","像我们这个群啊~红包发最少的人是:","我要打十个 结果1V1输哭的人是","啊 哈哈哈哈 原来是你在笑","是谁在唱 爱你的心 阿芳芳芳","接下来你要带上这个人出去潇洒走一回","最喜欢唱歌还要求唱忐忑版的人是:","探长哥哥相亲 叫必胜最起劲的人是:","快快快 已经四黑了 还缺一个 就你了","少壮不努力 老大徒伤悲 这个人说不存在的不存在的","NothingStyle出品人是:","我们选个代表 让Ta做少女时代的主席吧","帅锅的作业很有难度 总是答不上来的人是:","健身房出来可以三拳打死鲁智深的人是:","最喜欢发出讥笑的声音 此人是:","哇塞 此人未到 就迎来一股强大气场 莫非是:","以下是我们的幸运玩家 中奖一千万 请带好面具来领款","神使我们作首不作尾 居上不居下 能领悟这句话的人是:","跟藏獒最讲牢的人是:","其实探长哥哥最好的朋友是:","实际上学习成绩最好的人是:","柳市街一号人物是:","发起火热的心 祷告一夜到天光的人是:"]
+	var index = 0;
+	var pics_length = pics.length
+	// for (var i =0; i <pics_length; i++) {
+	// 	var img = new Image();
+	// 	img.src = pics[i];
+	// 	// console.log(i+'iiii')
+	// 	// console.log(index+'index');
+	// 	//异步之外用i，异步内部用index
+	// 	img.onload = function(){//异步
+	// 		index++;
+	// 		var percent = Math.floor(index/pics_length*100)
+	// 		drawCircle(percent)
+	// 	}
+	// }
+	var i = 0;
+	var count = 15;
+	var n = 1800;
+	while (i <pics_length)
+  	{
+  		var img = new Image();
+		img.src = pics[i];
+		// console.log(i+'iiii')
+		// console.log(index+'index');
+		//异步之外用i，异步内部用index
+		img.onload = function(){//异步
+			index++;
+			var percent = Math.floor(index/pics_length*100)
+			drawCircle(percent)
+			if(percent == 100){
+				$('.loading').hide();
+				$('.home').show(function(){
+					// callout.flash 
+					// transition.perspectiveDownIn
+					$('.title').velocity('callout.bounce',{
+							complete:function(){
+								$('.subtitle').velocity('callout.flash',
+									{
+										complete:function(){
+											$('.entitle').velocity('transition.perspectiveDownIn',
+												{
+													complete:function(){
+														$('.hand-wrap').show();
+														var shake = new Shake();    
+														shake.start();
+													    window.addEventListener('shake',function(){
+													    	$('.avatar-wrap').velocity('stop');
+															$('.home').hide();
+													    	var random = parseInt(Math.random()*count);//第1步随机
+													    	console.log(random,count)
+													    	var $t = $('.result .item:not(".noshow")').eq(random);//第2步加noshow 计数-1
+													    	$t.show().siblings().hide();
+															$t.addClass('noshow');
+															count = count-1;
+															if(count==0){//第3步重置数据
+																count = 15
+																$('.result .item').removeClass('noshow')
+															}
+													    	$('.result').show(
+													    		function(){	
+													    			n+=3600;
+													    			let randomQus = parseInt(Math.random()*30);
+													    			$(".title").empty();
+													    			$(".title").append(question[randomQus]);
+													    			$('.wenha').velocity('transition.fadeIn',{duration: 0});
+													    			$('.avatar').hide();
+													    			$('.answer').hide();
+													    			$('.avatar-wrap').velocity({'rotateY':''+ n +'deg'},{'duration':3000,
+														    				complete:function(){
+														    					$('.wenha').velocity('transition.expandOut',{
+														    						complete:function(){
+														    							$('.avatar').velocity('transition.expandIn',{display:'block'});
+														    							$('.answer').velocity('transition.bounceIn');
+														    							var itemIndex = $t.data('index');
+														    							console.log(itemIndex);
+														    						}
+														    					})
+														    				}
+													    				}
+													    			)
+													    		}
+													    	);
+													    })
+													}
+												}
+											)
+										},
+										display:"block"
+									}
+								)
+							},
+							display: "block" 
+						}
+					)
+
+					// $('.title').velocity('callout.bounce',{display:'block'})
+					// $('.subtitle').velocity('callout.flash',{display:'block'})
+					// $('.entitle').velocity('transition.perspectiveDownIn',{display:'block'})
+					
+				});
+			}
+			// if(i==index){
+
+			// }
+		}
+	  	i++;
+	  }
+	  var lock = true;
+      $('.result').on('click','.btns',function(){
+      $('.backgd').show();
+      $('.share').show();
+      lock = false;
+    });
+	 
+    $('.backgd').click(function(){
+    if(lock == false){ 	
+        $('.backgd').hide();
+        $('.share').hide(); 
+        lock = true;  	
+    	}
+
+		}
+    );
+// console.log(3)
+</script>
+</body>
+</html>
